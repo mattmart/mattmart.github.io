@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS ART</title>
+        <link rel="stylesheet" type ="text/css" href="create.css">
+    </head>
+<body>
+    <div id = "header">
+        <h1> Using CSS to create Art</h1>
+    </div>
+    <div class = "hero-sky">
+        <div class = "hero-sun">
+            <div class = "hero-clouds"></div>
+        </div>
+    </div>
+    <div class="hero-ground">
+        <div class = "hero-sky">
+           <!-- <div class = "flier"><img src="images/fox_spinning.gif" width="200"/></div> -->
+            <div class= "hero-trees">
+                <div class ="hero-fox"></div>
+            </div>
+        </div>  
+    </div>
+    <div id = "main">
+    <p>Following this tutorial, you will see how I added each image to the website to create this magnificant piece of art! </p>
+    <h3>Images found in example</h3>
+    <ul>
+        <li><a href = "https://i.gifer.com/5GpD.gif"> clouds gif </a>  </li>
+        <li><a href = "https://media.giphy.com/media/fwR54Wq7dYu9VXKiAF/giphy.gif"> sun gif</a>  </li>
+        <li><a href = "https://i.gifer.com/Yg6D.gif"> tree gif</a>  </li>
+        <li><a href = "https://i.gifer.com/3IsJ.gif"> fox gif</a>  </li>
+    </ul>
+    </div>
+    <div id = "main">
+        <p> <b>NOTE</b> to use the CSS code, insert the name into a div class</p>
+        <h3>For the ground I used the following CSS code</h3>
+        <p>.hero-ground { <br>
+            background-color: green; <br>
+            width: 100%; <br>
+            height: 304px; <br>
+          } <br>
+        </p>
+        <p> which should produce a green screen. </p>
+        <h3> Next, we should layer add the layer for the sky</h3>
+        <p> CSS code :</p>
+        <p>.hero-sky { <br>
+            background-color: lightskyblue; <br>
+            width: 100%; <br>
+            height: 204px; <br>
+        } <br>
+        </p>
+        <p> We should get the following background after putting the sky div inside the ground div: </p>
+        <div class="hero-ground">
+            <div class = "hero-sky">
+            </div>
+        </div>
+        <p> <b>NICE JOB!</b> You just created a nice base for a piece of art.</p> 
+        <h3>Now, its time to add the tree and animal gifs</h3>   
+        <p>CSS code :</p>
+        <p>.hero-trees { <br>
+            background-image: url("images/moving_tree.gif"); <br>
+            background-size: 270px; <br>
+            width: 100%; <br>
+            height: 304px; <br>
+            background-repeat: repeat; <br>
+        } <br>
+        </p>
+
+        <p>.hero-fox { <br>
+            background-image: url("images/fox_spinning.gif"); <br>
+            background-size: 50px; <br>
+            background-position-x: 15px; <br>
+            background-position-y: 200px; <br>
+            width: 1281px; <br>
+            height: 304px; <br>
+            background-repeat: no-repeat; <br>
+        } <br>
+        </p>
+        <p> The div class hierarchy ground -> sky -> trees -> fox, you should get something like this!</p>
+
+        <div class="hero-ground">
+            <div class = "hero-sky">
+                <div class= "hero-trees">
+                    <div class ="hero-fox"></div>
+                </div>
+            </div>  
+        </div>
+        <h3> NOW ITS YOUR TURN! </h3>
+        <p> by using the following CSS snipets, see if you can figure out how I created the sky! </p>
+        <p>
+            .hero-sun { <br>
+                background-image: url("images/sun.gif"); <br>
+                background-size: 100px; <br>
+                background-position-x: 90%; <br>
+                background-position-y: 20%; <br>
+                width: 100%; <br>
+                height: 100%; <br>
+                background-repeat: no-repeat; <br>
+            } <br>
+        </p>
+        <p>
+            .hero-clouds { <br>
+                background-image: url("images/clouds.gif"); <br>
+                background-size: 350px; <br>
+                background-repeat: repeat; <br>
+                height:100%; <br>
+                width:100%; <br>
+                background-position: fixed; <br>
+            } <br>
+        </p>
+    </div>
+
+    <div id = "footer"> 
+        <p> If you are interested in more CSS, try <a href = "https://www.w3schools.com/css/default.asp"> the following tutorial </a> </p>
+    </div>
+</body>
+</html>
